@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  background-color: rgb(55, 55, 55);
+}
+
+.main_things-container {
+  position:fixed;
+    width: 100vw;    /* Ensures the body takes the full width of the viewport */
+    height: 100vh;   /* Ensures the body takes the full height of the viewport */
+    overflow:hidden;/* Prevents any potential scrolling within the body */
+  bottom:0;
+  left: 0;
+}
+
+
+.list {
+  font-size: 2em;
+  padding-bottom: 20px;
+    font-family: 'Inter', system-ui, sans-serif;
+  font-weight:600;
+  background-color: rgb(41, 41, 41);
+  padding: 13px;
+  color: #EAEAEA;;
+  box-sizing: border-box;
+  border-radius: 10%;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh;
+  margin: 0vh;
+  gap: 5px;
+  width: 100%;
+}
+
+.button-wrapper button {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.play {
+  /* transform: scale(2.5); */
+  outline: 10px;
+  border: 10px;
+  background-color: transparent;
+  padding-bottom: 0px;
+}
+.img:hover {
+  width: 52px;
+}
+.img {
+  display:flex;
+  width: 42px;
+  transition: all 0.5s ease;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.next {
+  width: 20px;
+  height: auto;
+  transition: all 0.5s ease;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.next:hover {
+  width: 30px;
+}
+
+
+
+.back {
+  transform: scaleX(-1);
+  width: 20px;
+  height: auto;
+  transition: all 0.5s ease;
+  padding:0
+  
+}
+.back_b {
+  outline: 0px;
+  border: 0px;
+  background-color: transparent;
+}
+.back:hover {
+  width: 30px;
+}
+
+.progress-wrapper progress {
+  /* 1. Reset base styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.p-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-wrapper {
+  /* transform: scale(2.5); */
+}
+.progress-wrapper progress::-webkit-progress-value {
+  background-color: #d7557e; /* Your desired filled color */
+}
+
+.progress-wrapper progress::-webkit-progress-bar {
+  background-color: #333333; /* Your desired track color */
+  border-radius: 0px;
+}
+
+
+.progress-wrapper {
+  width: 30%;
+  padding: 0;
+  margin-left: 20px;
+  overflow: hidden;
+  outline: 0;
+
+}
+
+.play-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 83vh;
+
+}
+
+
+
+
+.progress-wrapper progress {
+  /* transform: scale(5);
+  transform-origin: center; */
+  height: 15px;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+
+.image {
+  display: flex;
+  /* transform: scale(1.5); */
+  width: 70px;
+  padding-right: 20px;
+}
+
+.black {
+  position:fixed;
+  height: 100px; /* Sets the vertical dimension */
+  width: 100vw;  /* Sets the horizontal dimension */
+  background-color: black; /* Fills the shape with black */
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.toast {
+  background:#d7557e !important;
+    font-family: 'Inter', system-ui, sans-serif;
+}
